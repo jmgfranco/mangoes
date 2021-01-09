@@ -1,0 +1,1045 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+html *{
+    font-family: 'Jost', sans-serif;
+    color:rgb( 71, 76, 81 );
+}
+
+body {
+    line-height:1;
+    background-color: rgb(  237, 237, 237  );
+    z-index: -1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* Start */
+
+*{
+    text-decoration: none;
+}
+
+main{
+	padding-top: 100px;
+}
+
+/* Header.php */
+/* Header-left */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb( 248, 248, 248 );
+    width: 100%;
+    height: 75px;
+}
+
+header nav ul{
+	display: block;
+    margin-top: 1rem;
+    width: fit-content;
+    padding-left: 1em;
+}
+
+header nav ul li{
+    display: inline-block;
+    float: left;
+    padding: 0 16px;
+}
+
+header nav ul li a{
+    line-height: 2;
+    border-radius: .3em;
+}
+
+header nav ul li img{
+    height: 50px;
+    width: 60px;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(122, 199, 238);
+    transition: .5s;
+    color: rgba(  0, 0, 0, );
+}
+
+header nav ul li input[type=text]{
+    border: none;
+    height: 20px;
+    border-radius: .4rem;
+    margin-top: .5em;
+}
+
+header nav ul li button{
+    border: none;
+    border-radius: .4rem;
+    height: 20px;
+    background-color: rgb(231, 231, 236);
+}
+
+header nav ul li button:hover{
+    transition: 1s;
+    background-color: rgb( 122, 199, 238 );
+}
+
+header nav ul li a{
+	font-family: arial;
+	display: block;
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+/* Header-right */
+.signin{
+    float: right;
+    width: 300px;
+	text-align: center;
+}
+
+.signin ul{
+    display: block;
+    margin: 0 auto;
+	width: fit-content;
+	padding-bottom: 10px;
+}
+
+.signin ul li{
+    text-decoration: none;
+    display: inline-block;
+	padding: 0 16px;
+}
+
+.signin ul li a{
+    font-family: arial;
+	display: block;
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2;
+    border-radius: .3em;
+}
+
+.signin ul li a:hover{
+    background-color: rgb(   122, 199, 238  );
+    transition: .5s;
+    color: rgba(  0, 0, 0);
+}
+
+
+
+.drop{
+    display: none;
+    background-color: rgb(231, 231, 236);  
+    margin: 0 auto;
+}
+
+.drop input{
+    border-radius: .2rem;
+    width: 90%;
+    margin-top: .2rem;
+}
+
+.drop input[type=submit]{
+    border: none;
+    cursor: pointer;
+}
+
+.drop input[type=submit]:hover{
+    background-color: rgb( 27, 182, 240 );
+    transition: .5s;
+    color: rgb( 248, 248, 248 );
+}
+
+.under{
+    position: relative;
+    width: 200px;
+    right: 50px;
+}
+
+.show{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb( 248, 248, 248 );
+    border-radius: .5em;
+    height: auto;
+    padding-bottom: 1rem;
+    transition: 2s;
+}
+
+
+.dropbtn{
+    border: none;
+    font: arial;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb( 248, 248, 248 );
+    margin-top: .5em;
+}
+
+.dropbtn span{
+    margin-right: .2em;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.login-hover:hover .dropdown-content{
+    margin: auto;
+    display: block;
+    background-color: rgb( 248, 248, 248 );
+    width: 200px;
+    text-align: center;
+}
+
+.dropdown-content a{
+    font-family: arial;
+	display: block;
+    font-size: 15px;
+    color: #111;
+    text-align: center;
+}
+
+.dropdown-content button{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb( 248, 248, 248 );
+}
+
+/* Register.php */
+
+.register{
+    height: 450px;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.register .section{
+    display:block;
+    background-color: rgb( 237, 239, 241 );
+    border-radius: 1em;
+    border: .1rem solid rgb( 202, 205, 208 );
+}
+
+.section input[type=text]{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: .1em solid rgb( 202, 205, 208 );
+    border-radius: 10px;
+    font-size: 20px;
+    height: 3rem;
+}
+
+.section input[type=password]{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: .1em solid rgb( 202, 205, 208 );
+    border-radius: 10px;
+    font-size: 20px;
+    height: 3rem;
+}
+
+.section input[type=file]{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 20px;
+    height: 3rem;
+}
+
+.section button{
+    margin-top: 2rem;
+    border: .1em solid rgb( 202, 205, 208 );
+    font-size: 20px;
+    box-shadow: 2px 2px 2px #888888;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.section button:hover{
+    background-color: rgb( 57, 137, 222 );
+    border: .1em solid rgb(57, 137, 222);
+    transition: .5s;
+    color: rgb( 248, 248, 248 );
+}
+
+.section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+/* main/index.php */
+.container{
+    background-color: rgb( 248, 248, 248 );
+    border-radius: .4em;
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: auto;
+    margin-bottom: 2rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.series-list{
+    margin-top: 15px;
+    margin-left: 40px;
+    border-bottom: 1px solid rgb( 92, 38, 209 );
+}
+
+.series-list h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.series-div{
+    background-color:rgb( 248, 248, 248 );
+    height: 300px;
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    border-bottom: 1px solid rgb( 92, 38, 209 );
+}
+
+.series-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.series-etc{
+    display: block;
+    float: left;
+    margin-top: 15px ;
+    margin-left: 1em;
+}
+
+.thumb{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height:280px ;
+    width: 200px;
+    background-color: midnightblue; 
+    float: left;
+    border: 1px solid rgb( 206, 206, 206 );
+}
+
+.thumb .thumb-link{
+    height: 280px;
+    width: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.title{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    color: rgb( 19, 144, 255  );
+    width: 200px;
+    height: auto;
+    margin: 0 auto; 
+    margin-left:1em ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(141, 141, 142) ;
+    padding-bottom: 10px;
+}
+
+.title a{
+    font-size: 22px;
+    color: rgb( 19, 144, 255  );
+}
+
+.title a:visited{
+    color: rgb( 19, 144, 255  );
+    text-decoration: underline;
+}
+
+.title a:hover{
+    text-decoration: underline;
+}
+
+.author{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto; 
+    margin-left: 1em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(141, 141, 142) ;
+    padding-bottom: 10px;
+}
+
+.author a{
+    font-size: 20px;
+    color: rgb( 16, 74, 255 );
+}
+.author a:visited{
+    font-size: 20px;
+    color: rgb( 16, 74, 255 );
+}
+
+.author a:hover{
+text-decoration: underline;
+}
+
+.chap-list{
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.chap-list li{
+    overflow: hidden;   
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    margin-bottom: 4px;
+}
+
+.chap-list li a{
+    font-size: 17px;
+    color: rgb( 71, 76, 81 );
+}
+
+.chap-list li a:visited{
+    color: rgb( 71, 76, 81 );
+}
+
+.chap-list li a:hover{
+   text-decoration: underline;
+}
+
+
+.add-new{
+    height: 300px;
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid rgb( 92, 38, 209 );
+}
+
+.new-ser-border{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height:280px ;
+    width: 200px;
+    background-color: midnightblue;  
+}
+
+.new-ser-border a{
+   text-align: center ;
+
+}
+
+.icon{
+    text-align: center;
+    line-height: 300px;
+}
+
+.icon i{
+    color: rgb( 92, 38, 209 );
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* new Series/series.php */
+.new-ser{
+    background-color: rgb( 248, 248, 248 );
+    height: auto;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: .4em;
+}
+
+.new-ser .ser-container{
+    display: block;
+}
+
+.ser-container h1{
+    font-size: 2em;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.ser-container input{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 3rem;
+}
+
+.ser-container textarea{
+    display: block;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 3rem;
+    resize: vertical;
+}
+
+.ser-container label{
+    font-size: 1.7em;
+    margin-left: 1em;
+}
+
+.ser-container button{
+    border-radius: 6px;
+    margin-top: 2rem;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-left: 30px;
+    margin: 2rem 0 1rem 30px;
+}
+
+.ser-container button:hover{
+    background-color: rgb( 27, 182, 240 );
+    transition: .5s;
+    color: rgb( 248, 248, 248 );
+}
+
+.series-container{
+    width: 1000px;
+    background-color: rgba( 234, 251, 245,.5 );
+    border: 2px solid rgb(  214, 236, 220  );
+    border-bottom: none;
+    border-radius: .2em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.series-cover{
+    float: left;
+    margin: .5em 0 .3em .6em;
+}
+
+.series-cover .ser-cover-container{
+    height: 470px;
+    width: 350px;
+    z-index: -1;
+}
+
+.series-cover .ser-cover-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.add-cover{
+    position: absolute;
+    display: none;
+}
+
+.series-cover img:hover ~ .series-container{
+    display: block;
+}
+
+.series-info{
+    float: left;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.series-info ul{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.series-info ul li{
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    width: 580px;
+    margin-bottom: .5em;
+    border-bottom: 2px solid rgb( 179, 184, 241 );
+}
+
+.series-info ul li a{
+    color: rgb( 71, 76, 81 );
+}
+
+.series-info ul li a:hover{
+    text-decoration: underline;
+ }
+
+.ser-edit-drop{
+    display: none;
+}
+
+.show-edit{
+    display: block;
+}
+
+.series-description{
+    width: 1000px;
+    background-color: rgba( 234, 251, 245,.5 );
+    border: 2px solid rgb(  214, 236, 220  );
+    border-top: none;
+    margin: 0 auto;
+}
+
+.series-description p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   padding-top: .5em;
+   padding-bottom: .5em;
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+.series-description h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 1em;
+    padding-top: .5em;
+ }
+
+.series-chp-list{
+    padding-top: .4em;
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+    max-height: inherit;
+    overflow: hidden;
+}
+
+.chp-navigate{
+    padding-left: 1em;
+    padding-top: .8em;
+    padding-bottom: .5em;
+}   
+
+.chp-navigate{
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0;
+} 
+
+.chp-navigate li{
+    margin: 0;
+    text-align: center;
+    display: inline;
+    border: solid 1px;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    border-bottom: none;
+    padding: .5em 1em;
+} 
+
+
+.chp-list-container{
+    margin-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 1.2em;
+}
+
+.chapter-row{
+    display: block;
+    margin-top: 1.3em;
+}
+
+.chapter-title{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    width: 400px;
+    float: left;
+}
+
+.chapter-title a{
+  color: rgb( 45, 142, 239 );
+}
+
+.chapter-title a:hover{
+    text-decoration: underline;
+}
+
+.chapter-date{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.chapter-date span{
+  font-size: 16px;
+}
+
+.chapter-view{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.chapter-delete input[type="submit"]{
+    float: left;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    background: none;
+}
+
+.chapter-delete input[type="submit"]:hover{
+    color: rgb( 66, 152, 238 );
+}
+
+/* Upload Chapter/new-Chp.php*/
+.chp-container{
+    height: auto;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: auto;
+    margin-bottom: 2rem;    
+}
+
+.new-chp-container{
+    background-color: rgb(  221, 213, 248  );
+    border: 2px solid rgb( 91, 58, 204 );
+    border-radius: .4em;
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: auto;
+    margin-bottom: 2rem;   
+}
+
+.new-chp-container div{
+    margin-top: .4em;
+    margin-left: .3em;
+}
+
+.new-chp-container input[type=text]{
+    font-size: 21px;
+    border-style: none;
+    border-radius: .4em;
+}
+
+.new-chp-container label{
+    font-size: 24px;
+    border-radius: .4em;
+}
+
+.new-chp-container select{
+    font-size: 21px;
+    border-style: none;
+    border-radius: .4em;
+}
+
+.new-chp-container input[type=file]{
+    font-size: 21px;
+    border-style: none;
+    border-radius: .4em;
+}
+.new-chp-container input[type=submit]{
+    font-size: 22px;
+    border-style: none;
+    border-radius: .4em;
+    margin-bottom: .4em;
+    cursor: pointer;
+    color: rgb( 32, 32, 33 );
+}
+
+.new-chp-container input[type=submit]:hover{
+    background-color: rgb(  129, 31, 216  );
+    transition: .5s;
+    color: rgb( 240, 239, 242 );;
+}
+
+/* new-chp.php newVol Form */
+.new-chp-addVol{
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+    margin-bottom: 2rem; 
+    padding-top: .4em;
+    padding-bottom: .5em;  
+}
+
+.newVolDrop{
+    display: none;
+    float: left;
+    margin-left: .2em;
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+#baba input[type=submit]{
+    background-color: rgb( 182, 181, 188 );
+    border-radius: .3em;
+    font-size: 21px;
+    color: rgb( 32, 32, 33 );
+}
+
+#baba input[type=submit]:hover{
+    background-color:  rgb( 86, 66, 230 ) ;
+    transition: 0.5s;
+    color: rgb( 240, 239, 242 );
+}
+
+.NewVolShow{
+    display: block;
+}
+
+.New-Vol-Click{
+    float: left;
+    margin-left: .2em;
+    margin-top: .4em;
+    margin-right: .2em;
+}
+
+.New-Vol-Click a{
+    background-color: rgb( 182, 181, 188 );
+    border-radius: .3em;
+    font-size: 21px;
+    color: rgb( 32, 32, 33 );
+}
+
+.New-Vol-Click a:hover{
+    background-color:  rgb( 86, 66, 230 ) ;
+    transition: 0.5s;
+    color: rgb( 240, 239, 242 );
+}
+
+.new-chp-addVol input[type=submit]{
+    font-size: 20px;
+    border-style: none;
+    border-radius: .4em;
+}
+
+.new-chp-addVol input[type=text]{
+    font-size: 20px;
+    border-style: none;
+    border-radius: .4em;
+    margin-bottom: .2em;
+    margin-top: .1em;
+}
+
+/* Chapter.php */
+.chapter-select-container{
+    background-color: rgb( 214, 215, 221 );
+    height: 100px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: auto;
+    border-radius: .4em;
+}
+
+.chapter-select{
+    float: left;
+    margin: auto;
+    font-size: 17px;
+    margin-left: 1em;
+    margin-top: 30px;
+}
+
+.chp-btn-navigate{
+    float: left;
+    margin-top: 30px;
+} 
+
+.chp-btn-navigate{
+    margin-left: 7px;
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+.chp-btn-navigate .chp-prev{
+    float: left;
+    background-color: rgb( 244, 244, 249 );  
+    width: 170px;
+    text-align: center;
+    padding: 7px;
+    box-shadow: 1px 2px #888888;
+}
+
+.chp-btn-navigate .chp-prev a{
+    font-size: 17px;
+}
+
+.chp-btn-navigate .chp-next{
+    float: left;
+    margin-left: 10px;
+    background-color: rgb( 244, 244, 249 );    
+    width: 170px;
+    text-align: center;
+    padding: 7px;
+    box-shadow: 1px 2px #888888;
+}
+
+.chp-btn-navigate .chp-next a{
+    font-size: 17px;
+}
+
+.series-title{
+    float: left;
+    margin-left: 2em;
+    margin-top: 30px;
+    padding-top: 4px;
+    font-size: 25px;
+}
+
+.series-title a{
+    color: rgb( 46, 40, 226 );
+}
+
+.page-img-container{
+    margin-top: 10px;
+}
+
+.page-img-container img{
+  display: block;
+  margin: 0 auto;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* cover.php */
+.cover-list-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
